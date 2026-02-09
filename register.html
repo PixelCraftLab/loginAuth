@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .regiser-container{
+        color: whitesmoke;
+        margin: 150px;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 30px;
+        margin-bottom: 30px;
+
+    }
+    #ine,#inp{
+        padding: 10px;
+        margin: 20px;
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: whitesmoke 0px 0px 5px;
+        border: none;
+    }
+    .register-btn{
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px #4CAF50;
+        transition: background-color 0.5s ease-in-out;
+    }
+    .register-btn:hover{
+        background-color: whitesmoke;
+        transition: background-color 0.5s ease-in-out;
+        color: black;
+    }
+
+    .home-link{
+        display: inline-block;
+        margin-top: 20px;
+        color: orange;
+        text-decoration: none;
+        font-size: 16px;
+        box-shadow: whitesmoke 0px 0px 30px;
+        padding: 10px;
+        border-radius: 10px;
+        transform: background-color 0.9s ease-in-out;
+    }
+    .home-link:hover{
+        box-shadow: orange 0px 0px 30px;
+        color: whitesmoke;
+        transform: background-color 0.5s ease-in-out;
+    }
+    
+
+
+  </style>
+</head>
+<body>
+
+  <div class="regiser-container">
+    
+    <p class="subtitle">Register here to login</p>
+
+    <form class="login-form">
+      <div class="input-group">
+        <label>Email</label>
+        <input id="ine" type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input id="inp" type="password" placeholder="Enter your password" required />
+      </div>
+
+      <button type="submit" class="register-btn" id="register">register</button>
+    </form>
+
+    
+
+    <a href="./log.html" class="home-link" >
+      Back to login
+    </a>
+  </div>
+  <script src="register-logic.js"></script>
+
+</body>
+</html>

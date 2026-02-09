@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .login-container{
+        color: whitesmoke;
+        margin: 150px;
+        text-align: center;
+        
+    }
+    .subtitle{
+        font-size: 30px;
+        margin-bottom: 30px;
+
+    }
+    #loine,#loinp{
+        padding: 10px;
+        margin: 20px;
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: whitesmoke 0px 0px 5px;
+        border: none;
+    }.login-btn{
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px #4CAF50;
+        transition: background-color 0.5s ease-in-out;
+    }
+    .login-btn:hover{
+        background-color: whitesmoke;
+        transition: background-color 0.5s ease-in-out;
+        color: black;
+    }
+    .register-text{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    #create{
+        color: #4CAF50;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 10px;
+        display: inline-block;
+    }
+    #create:hover{
+        text-decoration: underline;
+        color: whitesmoke;
+    }
+    .home-link{
+        display: inline-block;
+        margin-top: 20px;
+        color: orange;
+        text-decoration: none;
+        font-size: 16px;
+        box-shadow: whitesmoke 0px 0px 30px;
+        padding: 10px;
+        border-radius: 10px;
+        transform: background-color 0.9s ease-in-out;
+    }
+    .home-link:hover{
+        box-shadow: orange 0px 0px 10px;
+        color: whitesmoke;
+        transform: background-color 0.5s ease-in-out;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    
+    <p class="subtitle">Login to play with the 3D model</p>
+
+    <form class="login-form" >
+      <div class="input-group">
+        <label >Email</label>
+        <input id="loine" type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input id="loinp" type="password" placeholder="Enter your password" required />
+      </div>
+
+      <a class="login-btn" id="login">Login </a>
+    </form>
+
+    <p class="register-text">
+      Dont have an account?
+      <a href="./register.html"><span id="create">Create one</span></a>
+    </p>
+
+    <a href="./index.html" class="home-link" >
+       Go to Home
+    </a>
+  </div>
+  <script src="login-logic.js"></script>
+
+</body>
+</html>
