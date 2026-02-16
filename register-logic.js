@@ -6,8 +6,8 @@ let registerpassword = document.getElementById("inp");
 
 let registerbtn = document.getElementById("register");
 
-function register(p){
-    p.preventDefault();
+function register(e){
+    e.preventDefault();
     localStorage.setItem("email", registeremail.value);
     localStorage.setItem("password", registerpassword.value);
     alert("Registered Successfully");
