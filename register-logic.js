@@ -8,6 +8,12 @@ let registerbtn = document.getElementById("register");
 
 function register(e){
     e.preventDefault();
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+    if (!emailRegex.test(registeremail.value)) {
+        alert("Invalid Email");
+        return;
+    }
     localStorage.setItem("email", registeremail.value);
     localStorage.setItem("password", registerpassword.value);
     alert("Registered Successfully");
