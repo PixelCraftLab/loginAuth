@@ -10,8 +10,15 @@ function register(e){
     e.preventDefault();
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
     if (!emailRegex.test(registeremail.value)) {
         alert("Invalid Email");
+        return;
+    }
+
+    if (!passwordRegex.test(registerpassword.value)) {
+        alert("Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.");
         return;
     }
     localStorage.setItem("email", registeremail.value);
